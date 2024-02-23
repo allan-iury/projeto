@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Minha Galeria</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Meu Site</div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="https://assets.codepen.io/210284/flower-6.jpg"
+            alt="Image 1">
+        <img src="https://assets.codepen.io/210284/flower-7.jpg"
+            alt="Image 2">
+        <img src="https://assets.codepen.io/210284/flower-8.jpg"
+            alt="Image 3">
+        <img src="https://assets.codepen.io/210284/flower-9.jpg"
+            alt="Image 4">
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <!-- Thumbnails container -->
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Anterior</button>
+        <button id="next-btn" onclick="changeImage(1)">Proximo &gt;</button>
+    </div>
+        <!-- Adicione mais imagens aqui -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

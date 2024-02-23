@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a galeria de imagens */
+.gallery-images-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-img-wrap {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Ajuste o tamanho conforme necessário */
+    position: relative;
+}
+
+.gallery-img-wrap img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o lightbox (se necessário) */
+/* Adicione estilos para o lightbox aqui */
